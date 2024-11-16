@@ -1,0 +1,12 @@
+version: 1.0
+resources:
+  cpu: 1 vCPU
+  memory: 2 GB
+
+image:
+  configuration:
+    runtimeEnvironmentVariables:
+      FLASK_ENV: production
+      CUSTOM_MESSAGE: "Deploy con App Runner"
+    port: 8080
+    startCommand: "python app.py"
